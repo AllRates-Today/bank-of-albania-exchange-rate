@@ -1,10 +1,10 @@
 # Bank of Albania Exchange Rate API client
 
-Official **Bank of Albania** (Albania) daily exchange rates in Node.js / TypeScript — ~20 currencies against the ALL, with history back to 2026. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Bank of Albania** (Albania) daily exchange rates in Node.js / TypeScript — 20 currencies against the ALL, with history back to 2026. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the publisher's own publication date.
 
-Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — 300 requests/month, no credit card.
+Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required.
 
 ## Install
 
@@ -41,6 +41,14 @@ const series = await getHistory(
   { apiKey: 'art_live_...' }
 );
 ```
+
+## Currencies covered
+
+Bank of Albania currently publishes rates covering **21 currencies** (as of the latest table):
+
+`ALL` · `AUD` · `CAD` · `CHF` · `CNH` · `CNY` · `CZK` · `DKK` · `EUR` · `GBP` · `HUF` · `JPY` · `MKD` · `NOK` · `RUB` · `SEK` · `TRY` · `USD` · `XAG` · `XAU` · `XDR`
+
+Pairs the central bank does not print directly are resolved from this table (see below).
 
 ## Published vs derived rates
 

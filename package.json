@@ -1,7 +1,7 @@
 {
   "name": "bank-of-albania-exchange-rate",
-  "version": "1.0.3",
-  "description": "Official Bank of Albania (Albania) daily exchange rates — ~20 currencies vs ALL, history since 2026. Zero-dependency Node.js/TypeScript client.",
+  "version": "1.1.2",
+  "description": "Official Bank of Albania (Albania) daily exchange rates — 20 currencies vs ALL, history since 2026. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "boa",
     "bank",
