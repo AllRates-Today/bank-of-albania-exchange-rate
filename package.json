@@ -1,0 +1,54 @@
+{
+  "name": "bank-of-albania-exchange-rate",
+  "version": "1.0.3",
+  "description": "Official Bank of Albania (Albania) daily exchange rates — ~20 currencies vs ALL, history since 2026. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "boa",
+    "bank",
+    "of",
+    "albania",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "all",
+    "central-bank",
+    "official-rates",
+    "albania",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/boa/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/bank-of-albania-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/bank-of-albania-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
