@@ -70,10 +70,10 @@ const pair = await getRate('EUR', 'ALL', { apiKey: 'art_live_...' });
 {
   bank: 'boa',
   name: 'Bank of Albania',
-  rate_date: '2026-08-11',   // Bank of Albania's own publication date
+  rate_date: '2026-09-09',   // Bank of Albania's own publication date
   source: 'EUR',
   target: 'ALL',
-  rate: 92.96,
+  rate: 92.02,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boa',
   name: 'Bank of Albania',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "EUR", "quote": "ALL", "type": "reference", "value": 92.96 },
+    { "base": "EUR", "quote": "ALL", "type": "reference", "value": 92.02 },
     // … the rest of the published table (20 currencies vs ALL)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-albania-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'ALL', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'EUR', target: 'ALL', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'ALL',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 92.96, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 92.02, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'EUR' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Bank of Albania currently publishes rates covering **21 currencies** (as of the latest table):
+Bank of Albania currently publishes rates covering **20 currencies** against the ALL (as of the latest table):
 
-`ALL` · `AUD` · `CAD` · `CHF` · `CNH` · `CNY` · `CZK` · `DKK` · `EUR` · `GBP` · `HUF` · `JPY` · `MKD` · `NOK` · `RUB` · `SEK` · `TRY` · `USD` · `XAG` · `XAU` · `XDR`
+🇦🇺 `AUD` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNH` · 🇨🇳 `CNY` · 🇨🇿 `CZK` · 🇩🇰 `DKK` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇺 `HUF` · 🇯🇵 `JPY` · 🇲🇰 `MKD` · 🇳🇴 `NOK` · 🇷🇺 `RUB` · 🇸🇪 `SEK` · 🇹🇷 `TRY` · 🇺🇸 `USD` · `XAG` · `XAU` · `XDR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('EUR', 'ALL', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2026 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/boa.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/boa/latest.json`
 
 ## 🔗 Links
 
