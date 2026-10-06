@@ -85,10 +85,10 @@ const pair = await getRate('EUR', 'ALL', { apiKey: 'art_live_...' });
 {
   bank: 'boa',
   name: 'Bank of Albania',
-  rate_date: '2026-09-25',   // Bank of Albania's own publication date
+  rate_date: '2026-10-06',   // Bank of Albania's own publication date
   source: 'EUR',
   target: 'ALL',
-  rate: 91.97,
+  rate: 91.9,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boa',
   name: 'Bank of Albania',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-06',
   rates: [
-    { "base": "EUR", "quote": "ALL", "type": "reference", "value": 91.97 },
+    { "base": "EUR", "quote": "ALL", "type": "reference", "value": 91.9 },
     // … the rest of the published table (20 currencies vs ALL)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bank-of-albania-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'ALL', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'EUR', target: 'ALL', from: '2026-01-01', to: '2026-10-06' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'ALL',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-06',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 91.97, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-06', rate: 91.9, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
