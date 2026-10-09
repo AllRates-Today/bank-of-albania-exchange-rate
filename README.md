@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bank-of-albania-exchange-rate.svg)](https://github.com/AllRates-Today/bank-of-albania-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bank-of-albania-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![EUR/ALL today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboa%3Fsource%3DEUR%26target%3DALL&query=%24.rate&label=EUR%2FALL%20published%20by%20Bank%20of%20Albania&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boa/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboa%3Fsource%3DEUR%26target%3DALL&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boa/)
 
 **Official Bank of Albania (Albania) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of Albania itself prints, every business day.**
 
@@ -32,6 +34,39 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of Albania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Bank of Albania — 20 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | ALL | reference | 57 |
+| CAD | ALL | reference | 57.47 |
+| CHF | ALL | reference | 98.23 |
+| CNH | ALL | reference | 12.22 |
+| CNY | ALL | reference | 12.23 |
+| CZK | ALL | reference | 3.77 |
+| DKK | ALL | reference | 12.27 |
+| EUR | ALL | reference | 91.68 |
+| GBP | ALL | reference | 108.11 |
+| HUF | ALL | reference | 0.2517 |
+| JPY | ALL | reference | 0.518 |
+| MKD | ALL | reference | 1.5 |
+| NOK | ALL | reference | 8.57 |
+| RUB | ALL | reference | 0.9662 |
+| SEK | ALL | reference | 8.19 |
+| TRY | ALL | reference | 1.67 |
+| USD | ALL | reference | 81.94 |
+| XAG | ALL | reference | 4828.43 |
+| XAU | ALL | reference | 337715.92 |
+| XDR | ALL | reference | 110.8 |
+
+Source: [Official rates published by BOA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
