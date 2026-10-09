@@ -40,30 +40,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Bank of Albania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-08** by Bank of Albania — 20 rates. Updated 2026-10-08.
+Published **2026-10-09** by Bank of Albania — 20 rates. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AUD | ALL | reference | 57 |
-| CAD | ALL | reference | 57.47 |
-| CHF | ALL | reference | 98.23 |
-| CNH | ALL | reference | 12.22 |
-| CNY | ALL | reference | 12.23 |
+| CAD | ALL | reference | 57.43 |
+| CHF | ALL | reference | 98.3 |
+| CNH | ALL | reference | 12.21 |
+| CNY | ALL | reference | 12.21 |
 | CZK | ALL | reference | 3.77 |
-| DKK | ALL | reference | 12.27 |
-| EUR | ALL | reference | 91.68 |
-| GBP | ALL | reference | 108.11 |
+| DKK | ALL | reference | 12.26 |
+| EUR | ALL | reference | 91.65 |
+| GBP | ALL | reference | 108.14 |
 | HUF | ALL | reference | 0.2517 |
-| JPY | ALL | reference | 0.518 |
+| JPY | ALL | reference | 0.5163 |
 | MKD | ALL | reference | 1.5 |
-| NOK | ALL | reference | 8.57 |
+| NOK | ALL | reference | 8.54 |
 | RUB | ALL | reference | 0.9662 |
-| SEK | ALL | reference | 8.19 |
-| TRY | ALL | reference | 1.67 |
-| USD | ALL | reference | 81.94 |
-| XAG | ALL | reference | 4828.43 |
-| XAU | ALL | reference | 337715.92 |
-| XDR | ALL | reference | 110.8 |
+| SEK | ALL | reference | 8.21 |
+| TRY | ALL | reference | 1.66 |
+| USD | ALL | reference | 81.7 |
+| XAG | ALL | reference | 4930.49 |
+| XAU | ALL | reference | 341765.81 |
+| XDR | ALL | reference | 110.45 |
 
 Source: [Official rates published by BOA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
