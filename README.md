@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by Bank of Albania — 20 rates. Updated 2026-10-13.
+Published **2026-10-14** by Bank of Albania — 20 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ALL | reference | 57.05 |
+| AUD | ALL | reference | 57.19 |
 | CAD | ALL | reference | 57.4 |
-| CHF | ALL | reference | 98.28 |
-| CNH | ALL | reference | 12.23 |
-| CNY | ALL | reference | 12.23 |
+| CHF | ALL | reference | 97.9 |
+| CNH | ALL | reference | 12.19 |
+| CNY | ALL | reference | 12.19 |
 | CZK | ALL | reference | 3.77 |
-| DKK | ALL | reference | 12.24 |
-| EUR | ALL | reference | 91.49 |
-| GBP | ALL | reference | 108.35 |
+| DKK | ALL | reference | 12.22 |
+| EUR | ALL | reference | 91.29 |
+| GBP | ALL | reference | 108.22 |
 | HUF | ALL | reference | 0.2517 |
-| JPY | ALL | reference | 0.5178 |
+| JPY | ALL | reference | 0.5148 |
 | MKD | ALL | reference | 1.5 |
-| NOK | ALL | reference | 8.57 |
+| NOK | ALL | reference | 8.6 |
 | RUB | ALL | reference | 0.9662 |
-| SEK | ALL | reference | 8.18 |
-| TRY | ALL | reference | 1.66 |
-| USD | ALL | reference | 81.85 |
-| XAG | ALL | reference | 4950.72 |
-| XAU | ALL | reference | 342431.75 |
-| XDR | ALL | reference | 110.76 |
+| SEK | ALL | reference | 8.19 |
+| TRY | ALL | reference | 1.65 |
+| USD | ALL | reference | 81.57 |
+| XAG | ALL | reference | 4772.28 |
+| XAU | ALL | reference | 337931.46 |
+| XDR | ALL | reference | 110.33 |
 
 Source: [Official rates published by BOA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
