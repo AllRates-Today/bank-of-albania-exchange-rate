@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by Bank of Albania — 20 rates. Updated 2026-10-14.
+Published **2026-10-15** by Bank of Albania — 20 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ALL | reference | 57.19 |
-| CAD | ALL | reference | 57.4 |
-| CHF | ALL | reference | 97.9 |
-| CNH | ALL | reference | 12.19 |
-| CNY | ALL | reference | 12.19 |
-| CZK | ALL | reference | 3.77 |
+| AUD | ALL | reference | 56.33 |
+| CAD | ALL | reference | 57.3 |
+| CHF | ALL | reference | 98.14 |
+| CNH | ALL | reference | 12.16 |
+| CNY | ALL | reference | 12.16 |
+| CZK | ALL | reference | 3.75 |
 | DKK | ALL | reference | 12.22 |
-| EUR | ALL | reference | 91.29 |
-| GBP | ALL | reference | 108.22 |
-| HUF | ALL | reference | 0.2517 |
-| JPY | ALL | reference | 0.5148 |
-| MKD | ALL | reference | 1.5 |
-| NOK | ALL | reference | 8.6 |
-| RUB | ALL | reference | 0.9662 |
-| SEK | ALL | reference | 8.19 |
+| EUR | ALL | reference | 91.28 |
+| GBP | ALL | reference | 107.95 |
+| HUF | ALL | reference | 0.251 |
+| JPY | ALL | reference | 0.5159 |
+| MKD | ALL | reference | 1.49 |
+| NOK | ALL | reference | 8.55 |
+| RUB | ALL | reference | 0.9714 |
+| SEK | ALL | reference | 8.16 |
 | TRY | ALL | reference | 1.65 |
-| USD | ALL | reference | 81.57 |
-| XAG | ALL | reference | 4772.28 |
-| XAU | ALL | reference | 337931.46 |
-| XDR | ALL | reference | 110.33 |
+| USD | ALL | reference | 81.34 |
+| XAG | ALL | reference | 4619.23 |
+| XAU | ALL | reference | 338242.63 |
+| XDR | ALL | reference | 110.04 |
 
 Source: [Official rates published by BOA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
