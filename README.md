@@ -42,30 +42,30 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by Bank of Albania — 20 rates. Updated 2026-10-15.
+Published **2026-10-16** by Bank of Albania — 20 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ALL | reference | 56.33 |
-| CAD | ALL | reference | 57.3 |
-| CHF | ALL | reference | 98.14 |
-| CNH | ALL | reference | 12.16 |
-| CNY | ALL | reference | 12.16 |
+| AUD | ALL | reference | 56.52 |
+| CAD | ALL | reference | 57.35 |
+| CHF | ALL | reference | 98.56 |
+| CNH | ALL | reference | 12.14 |
+| CNY | ALL | reference | 12.14 |
 | CZK | ALL | reference | 3.75 |
 | DKK | ALL | reference | 12.22 |
-| EUR | ALL | reference | 91.28 |
-| GBP | ALL | reference | 107.95 |
+| EUR | ALL | reference | 91.32 |
+| GBP | ALL | reference | 108.25 |
 | HUF | ALL | reference | 0.251 |
-| JPY | ALL | reference | 0.5159 |
+| JPY | ALL | reference | 0.5142 |
 | MKD | ALL | reference | 1.49 |
-| NOK | ALL | reference | 8.55 |
+| NOK | ALL | reference | 8.59 |
 | RUB | ALL | reference | 0.9714 |
-| SEK | ALL | reference | 8.16 |
-| TRY | ALL | reference | 1.65 |
-| USD | ALL | reference | 81.34 |
-| XAG | ALL | reference | 4619.23 |
-| XAU | ALL | reference | 338242.63 |
-| XDR | ALL | reference | 110.04 |
+| SEK | ALL | reference | 8.21 |
+| TRY | ALL | reference | 1.64 |
+| USD | ALL | reference | 81.2 |
+| XAG | ALL | reference | 4694.14 |
+| XAU | ALL | reference | 339645.8 |
+| XDR | ALL | reference | 109.94 |
 
 Source: [Official rates published by BOA, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boa/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -260,7 +260,7 @@ curl "https://allratestoday.com/api/v1/central-bank/boa/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('boa')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate boa ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
