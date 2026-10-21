@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/boa').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,30 +47,30 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by Bank of Albania — 20 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by Bank of Albania — 20 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ALL | reference | 56.56 |
-| CAD | ALL | reference | 57.56 |
-| CHF | ALL | reference | 98.11 |
-| CNH | ALL | reference | 12.12 |
+| AUD | ALL | reference | 56.82 |
+| CAD | ALL | reference | 57.53 |
+| CHF | ALL | reference | 97.99 |
+| CNH | ALL | reference | 12.11 |
 | CNY | ALL | reference | 12.11 |
 | CZK | ALL | reference | 3.75 |
 | DKK | ALL | reference | 12.14 |
-| EUR | ALL | reference | 90.77 |
-| GBP | ALL | reference | 107.98 |
+| EUR | ALL | reference | 90.74 |
+| GBP | ALL | reference | 108.29 |
 | HUF | ALL | reference | 0.251 |
-| JPY | ALL | reference | 0.5118 |
+| JPY | ALL | reference | 0.5113 |
 | MKD | ALL | reference | 1.49 |
-| NOK | ALL | reference | 8.62 |
+| NOK | ALL | reference | 8.63 |
 | RUB | ALL | reference | 0.9714 |
 | SEK | ALL | reference | 8.17 |
 | TRY | ALL | reference | 1.63 |
-| USD | ALL | reference | 80.9 |
-| XAG | ALL | reference | 4628.94 |
-| XAU | ALL | reference | 333325.8 |
-| XDR | ALL | reference | 109.61 |
+| USD | ALL | reference | 80.86 |
+| XAG | ALL | reference | 4640.36 |
+| XAU | ALL | reference | 333416.51 |
+| XDR | ALL | reference | 109.54 |
 
 </details>
 
