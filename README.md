@@ -32,30 +32,30 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-12 by Bank of Albania — 20 rates. Updated 2026-11-12.</summary>
+<summary>Table as text: published 2026-11-13 by Bank of Albania — 20 rates. Updated 2026-11-13.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | ALL | reference | 55.87 |
-| CAD | ALL | reference | 57.4 |
-| CHF | ALL | reference | 98.36 |
-| CNH | ALL | reference | 12.26 |
-| CNY | ALL | reference | 12.26 |
-| CZK | ALL | reference | 3.74 |
+| AUD | ALL | reference | 55.74 |
+| CAD | ALL | reference | 57.54 |
+| CHF | ALL | reference | 98.02 |
+| CNH | ALL | reference | 12.3 |
+| CNY | ALL | reference | 12.3 |
+| CZK | ALL | reference | 3.72 |
 | DKK | ALL | reference | 12.14 |
-| EUR | ALL | reference | 90.72 |
-| GBP | ALL | reference | 108.54 |
-| HUF | ALL | reference | 0.2486 |
-| JPY | ALL | reference | 0.5123 |
+| EUR | ALL | reference | 90.71 |
+| GBP | ALL | reference | 108.52 |
+| HUF | ALL | reference | 0.2482 |
+| JPY | ALL | reference | 0.5132 |
 | MKD | ALL | reference | 1.48 |
-| NOK | ALL | reference | 8.57 |
-| RUB | ALL | reference | 1.01 |
-| SEK | ALL | reference | 8.21 |
+| NOK | ALL | reference | 8.59 |
+| RUB | ALL | reference | 0.9982 |
+| SEK | ALL | reference | 8.18 |
 | TRY | ALL | reference | 1.63 |
-| USD | ALL | reference | 81.77 |
-| XAG | ALL | reference | 4181.13 |
-| XAU | ALL | reference | 322835.32 |
-| XDR | ALL | reference | 110.51 |
+| USD | ALL | reference | 82.06 |
+| XAG | ALL | reference | 4101.65 |
+| XAU | ALL | reference | 319655.7 |
+| XDR | ALL | reference | 110.72 |
 
 </details>
 
